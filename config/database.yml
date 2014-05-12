@@ -1,0 +1,16 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *defaults
+  database: wdi_4_rails_demo_devise_development
+
+test:
+  <<: *defaults
+  database: wdi_4_rails_demo_devise_test
+
+production:
+  <<: *defaults
+  database: wdi_4_rails_demo_devise_production
